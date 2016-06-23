@@ -1,1 +1,2 @@
-# Blog - The Odin Project \n Ruby on Rails project
+# Blog - The Odin Project
+ Ruby on Rails project
