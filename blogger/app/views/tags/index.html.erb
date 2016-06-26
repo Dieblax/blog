@@ -1,7 +1,11 @@
 <h1>Tags</h1>
 
 <% @tags.each do |tag| %>
-	<p>
-		<%= link_to "##{tag.name.capitalize}", tag_path(tag) %>
-	</p><br>
+	<% if tag.articles.exists? %>
+		<p>
+			<%= link_to "##{tag.name.capitalize}", tag_path(tag) %>
+		</p><br>
+	<% end %>
 <% end %>
+
+<p><%= link_to 'Back to Articles', articles_path %></p>
