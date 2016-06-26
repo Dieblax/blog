@@ -1,4 +1,7 @@
 <h1><%= @article.title %></h1>
+<% if @article.image.exists? %>
+	<p><%= image_tag @article.image.url %></p>
+<% end %>
 <p>
 	Tags:
 	<% @article.tags.each do |tag| %>
